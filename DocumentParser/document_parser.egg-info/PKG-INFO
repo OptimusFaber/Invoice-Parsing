@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: document-parser
+Version: 0.1.0
+Summary: Document Parser for processing invoices and extracting structured information
+Home-page: https://github.com/OptimusFaber/document-parser
+Author: Rodrick Kalkopf
+Author-email: r.shkokov@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Provides-Extra: detectron
+Provides-Extra: gpu
+
+UNKNOWN
+

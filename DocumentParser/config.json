@@ -1,0 +1,48 @@
+{
+    "first_stage": {
+        "layout": {
+            "config_path": "LayoutDetectron/Invoices/config.yaml",
+            "model_path": "LayoutDetectron/Invoices/model_final.pth"
+        },
+        "yolo": {
+            "model_path": "YoloDetectron/Invoices/best.pt"
+        },
+        "label_map": {
+            "0": "Company_detail",
+            "1": "Customer_detail",
+            "2": "Invoice_detail",
+            "3": "Top_other",
+            "4": "table",
+            "5": "table_total"
+        },
+        "color_map": {
+            "Company_detail": "yellow",
+            "Customer_detail": "red",
+            "Invoice_detail": "green",
+            "Top_other": "blue",
+            "table": "purple",
+            "table_total": "orange"
+        }
+    },
+    "second_stage": {
+        "layout": {
+            "config_path": "LayoutDetectron/InvoiceDetails/config.yaml",
+            "model_path": "LayoutDetectron/InvoiceDetails/model_final.pth"
+        },
+        "yolo": {
+            "model_path": "YoloDetectron/InvoiceDetails/best.pt"
+        },
+        "label_map": {
+            "0": "ClientId",
+            "1": "ClientVAT",
+            "2": "InvoiceDate",
+            "3": "InvoiceNumber"
+        },
+        "color_map": {
+            "ClientId": "cyan",
+            "ClientVAT": "magenta",
+            "InvoiceDate": "lime",
+            "InvoiceNumber": "blue"
+        }
+    }
+} 
